@@ -45,23 +45,7 @@ end
 
 names = []
 
-pigeon_data.each_value do |value|
-    if value.kind_of?(String)
-      names << value
 
-    else 
-      value.each do |inner_value|
-        if inner_value.kind_of?(String)
-          names << inner_value
-
-        else 
-          inner_value.each_value do |innner_inner_value|
-          names << innner_inner_value
-          end
-        end
-      end
-    end
-end
 
 puts names
 
