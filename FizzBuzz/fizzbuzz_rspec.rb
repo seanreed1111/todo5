@@ -21,19 +21,19 @@ require './fizzbuzz_refactor'
 
 describe "fizzbuzz" do
 
-	 it "should return fizzbuzz when number mod 15 = 0" do
+	 it "should return Fizzbuzz when number mod 15 = 0" do
 	 	expect(fizzbuzz(75)).to eq("Fizzbuzz")
 	 end
 
-	 it "should return fizz when the number mod 3 = 0" do
+	 it "should return Fizz when the number mod 3 = 0" do
 	 	expect(fizzbuzz(9)).to eq("Fizz")
 	 end
 
-	 it "should return fizzbuzz when number mod 5 = 0" do
+	 it "should return Buzz when number mod 5 = 0" do
 	 	expect(fizzbuzz(10)).to eq("Buzz")
 	 end
 
-	 it "should return fizzbuzz when number mod 15 = 0" do
+	 it "should return number when number does not satisfy any of the above" do
 	 	expect(fizzbuzz(13)).to eq(13)
 	 end
 
