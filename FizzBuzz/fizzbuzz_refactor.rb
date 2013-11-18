@@ -6,16 +6,32 @@
 # when the number is divisible by 5 say buzz
 # when the number is divisible by 3 and 5 say fizzbuzz
 
-(1..100).each do |number|
+# (1..100).each do |number|
+# 	if number % 15 == 0
+# 		puts "fizzbuzz"
+# 	elsif number % 3 == 0
+# 		puts "fizz"
+# 	elsif number % 5 == 0
+# 		puts "buzz"
+# 	else
+# 		puts number
+			
+# 	end
+			
+# end
+
+def fizz_buzz(number)
 	if number % 15 == 0
-		puts "fizzbuzz"
+		"Fizzbuzz"
 	elsif number % 3 == 0
-		puts "fizz"
+		"Fizz"
 	elsif number % 5 == 0
-		puts "buzz"
+		"Buzz"
 	else
-		puts number
-			
+		number	
 	end
-			
 end
+
+(1..100).each do |number|
+	puts fizz_buzz(number)
+	end
