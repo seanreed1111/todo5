@@ -20,7 +20,7 @@
 			
 # end
 
-def fizz_buzz(number)
+def fizzbuzz(number)
 	if number % 15 == 0
 		"Fizzbuzz"
 	elsif number % 3 == 0
@@ -32,6 +32,6 @@ def fizz_buzz(number)
 	end
 end
 
-(1..100).each do |number|
-	puts fizz_buzz(number)
-	end
+# (1..100).each do |number|
+# 	puts fizzbuzz(number)
+# 	end
