@@ -4,7 +4,7 @@ class Yahtzee
     Array.new(5) { rand(1..6) }
   end
  
-  def win? roll
+  def win?(roll)
     roll.uniq.length == 1 ? true : false
   end
  
