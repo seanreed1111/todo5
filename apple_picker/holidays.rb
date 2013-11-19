@@ -77,15 +77,39 @@ def winter_suppliers(holiday_supplies)
   supplies
 end
 winter_suppliers(holiday_supplies)
+
 # 6. Write a loop to list out all the supplies you have for each holiday and the season.
 
 # Output:
-# ```
+# 
 # Winter:
 #   Christmas: Lights and Wreath
 #   New Years: Party Hats
-# ```
+
+def print_supplies(holiday_supplies)
+
+  holiday_supplies.each do |keys, values|
+    puts "#{keys}:"
+      values.each do |key2, value2|
+        print "#{key2}:"
+        value_string = 
+      end
+  end
+end
+
+
+
+
 
 # 7. Write a method to collect all holidays with BBQ.
 
 # `holidays_with_bbqs(holiday_supplies) #=> [:fourth_of_july, :memorial_day]`
+
+
+
+
+
+
+
+
+
